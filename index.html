@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <title>Mini Supermarket Management System | [MSMS]</title>
+  </head>
+  <body>
+    <nav class="nav-section" id="nav-section">
+      <input
+        type="text"
+        class="search-product"
+        id="search-product"
+        placeholder="Search by Product ID"
+      />
+      <div class="nav-image-holder">
+        <img
+          src="./img/navNotification.png"
+          alt="nav-notification"
+          class="nav-notification"
+          id="nav-notification"
+        />
+        <img
+          src="./img/navProfile.png"
+          alt="nav-notification"
+          class="nav-profile"
+          id="nav-profile"
+        />
+      </div>
+    </nav>
+    <div class="center-elements" id="center-elements">
+      <div class="products-container">
+        <div class="product-name-and-quantity" id="product-name-and-quanity">
+          <div class="product-name">
+            <input
+              type="text"
+              class="product-name-input"
+              id="product-name-input"
+            />
+            <label for="product-name-input">Product Name</label>
+          </div>
+          <div class="product-quantity">
+            <input
+              type="text"
+              class="product-quantity-input"
+              id="product-quantity-input"
+            />
+            <label for="product-quantity-input">Product Quantity</label>
+          </div>
+        </div>
+        <div class="product-category-and-price" id="product-category-and-price">
+          <div class="product-category">
+            <input
+              type="text"
+              class="product-category-input"
+              id="product-category-input"
+            />
+            <label for="product-category-input">Product Category</label>
+          </div>
+          <div class="product-price">
+            <input
+              type="text"
+              class="product-price-input"
+              id="product-price-input"
+            />
+            <label for="product-price-input">Product Price</label>
+          </div>
+        </div>
+      </div>
+      <div class="all-buttons" id="all-buttons">
+        <button class="add-button" id="add-button">ADD</button>
+        <button class="edit-button" id="edit-button">EDIT</button>
+        <button class="clear-button" id="clear-button">CLEAR</button>
+        <button class="delete-button" id="delete-button">DELETE</button>
+      </div>
+      <div class="table-container">
+        <table class="table" id="table">
+          <thead class="table-header" id="table-header">
+            <tr class="table-row-head" id="table-row-head">
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Product Quantity</th>
+              <th>Product Category</th>
+              <th>Product Price</th>
+            </tr>
+          </thead>
+          <tbody class="table-body" id="table-body">
+            <!-- <tr class="table-row" id="table-row">
+              <td class="productId-data" id="productId-data">1678732329655</td>
+              <td class="product-name-data" id="product-name-data">
+                Golden Morn
+              </td>
+              <td class="product-quantity-data" id="product-quantity-data">
+                12
+              </td>
+              <td class="product-category-data" id="product-category-data">
+                Cereal
+              </td>
+              <td class="product-price-data" id="product-price-data">12,000</td>
+            </tr> -->
+
+            <!-- Add more rows here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="delete-message" id="delete-message"></div>
+  </body>
+</html>
